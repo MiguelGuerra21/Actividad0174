@@ -1,4 +1,4 @@
-
+import java.util.ArrayList;
 /**
  * Write a description of class Persona here.
  * 
@@ -16,6 +16,8 @@ public class Persona
     private int caloriasIngeridas;
     private int metabolismoBasalMaximo;
     private Comida comidaMasCalorica;
+    private ArrayList<String> listaDeComidas;
+    private Comida[] comidasDesordenadas;
 
     /**
      * El constructor de la clase Persona deberá tener (en el mismo orden):
@@ -35,6 +37,8 @@ public class Persona
         this.edad = edad;
         caloriasIngeridas = 0;
         comidaMasCalorica = null;
+        listaDeComidas = new ArrayList<String>(10);
+        comidasDesordenadas = new Comida[10];
         if(genero = true){
             metabolismoBasalMaximo = 10*peso + 6*altura + 5*edad + 5;
         }
@@ -53,6 +57,7 @@ public class Persona
      */
     public int comer(Comida nombre){
         int caloriasDeLaComida = nombre.getCalorias();
+        int contador = 0;
         if(caloriasIngeridas <= metabolismoBasalMaximo){
             caloriasIngeridas = caloriasIngeridas + nombre.getCalorias();
             if(comidaMasCalorica == null){
@@ -66,6 +71,8 @@ public class Persona
             caloriasDeLaComida = -1;
             System.out.println("No quiero comer mas");
         }
+        comidasDesordenadas[contador] = nombre;
+        contador++;
         return caloriasDeLaComida;
     }
 
@@ -99,5 +106,11 @@ public class Persona
             comidaADevolver = comidaMasCalorica.getNombre();
         }
         return comidaADevolver;
+    }
+    //Implementa el código necesario para disponer de un método llamado verListadoComidasIngeridas 
+    //en la clase Persona que no devuelve nada y que imprime por pantalla la lista de comidas ingeridas ordenadas de mayor a menor valor calórico. 
+    //En el listado debe mostrarse el nombre de la comida y su valor calórico
+    public void verListadoComidasIngeridas(){
+        System.out.println(listaDeComidas);
     }
 }
