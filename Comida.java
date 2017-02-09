@@ -8,7 +8,7 @@
 public class Comida
 {
     // instance variables - replace the example below with your own
-    private String nombre;
+    private String nombreComida;
     private int calorias;
 
     /**
@@ -16,7 +16,7 @@ public class Comida
      */
     public Comida(String nombre, int calorias)
     {
-        this.nombre = nombre;
+        nombreComida = nombre;
         this.calorias = calorias;
     }
     public int getCalorias(){

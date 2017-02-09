@@ -6,5 +6,5 @@ comment1.params=
 comment1.target=int\ getCaloriasIngeridas()
 comment2.params=nombre
 comment2.target=int\ comer(Comida)
-comment2.text=\r\n\ Hombres\ \=\ (10\ x\ peso\ en\ kg)\ +\ (6\ \u00D7\ altura\ en\ cm)\ -\ (5\ \u00D7\ edad\ en\ a\u00F1os)\ +\ 5\r\n\ Mujeres\ \=\ (10\ x\ peso\ en\ kg)\ +\ (6\ \u00D7\ altura\ en\ cm)\ -\ (5\ \u00D7\ edad\ en\ a\u00F1os)\ -\ 161\r\n
+comment2.text=\r\n\ Hombres\ \=\ (10\ x\ peso\ en\ kg)\ +\ (6\ \u00D7\ altura\ en\ cm)\ +\ (5\ \u00D7\ edad\ en\ a\u00F1os)\ +\ 5\r\n\ Mujeres\ \=\ (10\ x\ peso\ en\ kg)\ +\ (6\ \u00D7\ altura\ en\ cm)\ +\ (5\ \u00D7\ edad\ en\ a\u00F1os)\ -\ 161\r\n
 numComments=3

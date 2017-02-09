@@ -39,21 +39,21 @@ public class Persona
     }
 
     /**
-     * Hombres = (10 x peso en kg) + (6 × altura en cm) - (5 × edad en años) + 5
-     * Mujeres = (10 x peso en kg) + (6 × altura en cm) - (5 × edad en años) - 161
+     * Hombres = (10 x peso en kg) + (6 × altura en cm) + (5 × edad en años) + 5
+     * Mujeres = (10 x peso en kg) + (6 × altura en cm) + (5 × edad en años) - 161
      */
     public int comer(Comida nombre){
         caloriasIngeridas = caloriasIngeridas + nombre.getCalorias();
         int caloriasDeLaComida = nombre.getCalorias();
         if(genero = true){
-            if(caloriasIngeridas > (10*peso + 6*altura - 5*edad + 5)){
+            if(caloriasIngeridas > (10*peso + 6*altura + 5*edad + 5)){
                 caloriasIngeridas = caloriasIngeridas - nombre.getCalorias();;
                 caloriasDeLaComida = -1;
                 System.out.println("No quiero comer mas");
             }
         }
         else{
-            if(caloriasIngeridas > (10*peso + 6*altura - 5*edad -161)){
+            if(caloriasIngeridas > (10*peso + 6*altura + 5*edad -161)){
                 caloriasIngeridas = caloriasIngeridas - nombre.getCalorias();
                 caloriasDeLaComida = -1;
                 System.out.println("No quiero comer mas");
