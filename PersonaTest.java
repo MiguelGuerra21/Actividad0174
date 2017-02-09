@@ -66,7 +66,7 @@ public class PersonaTest
         assertEquals(269, persona1.comer(comida5));              
         assertEquals(1469, persona1.getCaloriasIngeridas());    
         // Come una paella
-        assertEquals(800, persona1.comer(comida5));             
+        assertEquals(800, persona1.comer(comida1));             
         assertEquals(2269, persona1.getCaloriasIngeridas()); 
         // Come unas lentejas
         assertEquals(-1, persona1.comer(comida5));             
@@ -79,11 +79,10 @@ public class PersonaTest
         assertEquals(2000, persona2.comer(comida4));
         assertEquals(2000, persona2.getCaloriasIngeridas());
         // Come una ensalada
-        assertEquals(269, persona2.comer(comida3));
+        assertEquals(269, persona2.comer(comida5));
         assertEquals(2269, persona2.getCaloriasIngeridas());
         // Come una pizza
         assertEquals(-1, persona2.comer(comida2));
         assertEquals(2269, persona2.getCaloriasIngeridas());
     }
-
 }

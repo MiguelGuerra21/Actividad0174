@@ -14,6 +14,7 @@ public class Persona
     private int altura;
     private int edad;
     private int caloriasIngeridas;
+    private int metabolismoBasalMaximo;
 
     /**
      * El constructor de la clase Persona deberá tener (en el mismo orden):
@@ -32,6 +33,12 @@ public class Persona
         this.altura = altura;
         this.edad = edad;
         caloriasIngeridas = 0;
+        if(genero = true){
+            metabolismoBasalMaximo = 10*peso + 6*altura + 5*edad + 5;
+        }
+        else{
+            metabolismoBasalMaximo = 10*peso + 6*altura + 5*edad -161;
+        }
     }
 
     public int getCaloriasIngeridas(){
@@ -43,21 +50,13 @@ public class Persona
      * Mujeres = (10 x peso en kg) + (6 × altura en cm) + (5 × edad en años) - 161
      */
     public int comer(Comida nombre){
-        caloriasIngeridas = caloriasIngeridas + nombre.getCalorias();
         int caloriasDeLaComida = nombre.getCalorias();
-        if(genero = true){
-            if(caloriasIngeridas > (10*peso + 6*altura + 5*edad + 5)){
-                caloriasIngeridas = caloriasIngeridas - nombre.getCalorias();;
-                caloriasDeLaComida = -1;
-                System.out.println("No quiero comer mas");
-            }
+        if(caloriasIngeridas <= metabolismoBasalMaximo){
+            caloriasIngeridas = caloriasIngeridas + nombre.getCalorias();
         }
         else{
-            if(caloriasIngeridas > (10*peso + 6*altura + 5*edad -161)){
-                caloriasIngeridas = caloriasIngeridas - nombre.getCalorias();
-                caloriasDeLaComida = -1;
-                System.out.println("No quiero comer mas");
-            }
+            caloriasDeLaComida = -1;
+            System.out.println("No quiero comer mas");
         }
         return caloriasDeLaComida;
     }
