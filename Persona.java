@@ -60,4 +60,23 @@ public class Persona
         }
         return caloriasDeLaComida;
     }
+
+    public String contestar(String pregunta){
+        String preguntaRealizada = pregunta;
+        String respuesta = "";
+        if((preguntaRealizada.length()%3) == 0 && caloriasIngeridas < metabolismoBasalMaximo){
+            respuesta = "SI";
+        }
+        else{
+            respuesta = "NO";
+        }
+        if(preguntaRealizada.contains(nombre)) {
+            respuesta = pregunta.toUpperCase();
+        }
+        else if(caloriasIngeridas > metabolismoBasalMaximo){
+            respuesta = pregunta.toUpperCase();
+        }
+        System.out.println(respuesta);
+        return respuesta;
+    }
 }

@@ -50,13 +50,33 @@ public class Persona
      * Mujeres = (10 x peso en kg) + (6 × altura en cm) + (5 × edad en años) - 161
      */
     public int comer(Comida nombre){
-        caloriasIngeridas = caloriasIngeridas + nombre.getCalorias();
         int caloriasDeLaComida = nombre.getCalorias();
-        if(caloriasIngeridas >= metabolismoBasalMaximo){
-            caloriasIngeridas = caloriasIngeridas;
+        if(caloriasIngeridas <= metabolismoBasalMaximo){
+            caloriasIngeridas = caloriasIngeridas + nombre.getCalorias();
+        }
+        else{
             caloriasDeLaComida = -1;
             System.out.println("No quiero comer mas");
         }
         return caloriasDeLaComida;
+    }
+
+    public String contestar(String pregunta){
+        String preguntaRealizada = pregunta;
+        String respuesta = "";
+        if((preguntaRealizada.length()%3) == 0 && caloriasIngeridas < metabolismoBasalMaximo){
+            respuesta = "SI";
+        }
+        else{
+            respuesta = "NO";
+        }
+        if(preguntaRealizada.contains(nombre)) {
+            respuesta = pregunta.toUpperCase();
+        }
+		else if(caloriasIngeridas > metabolismoBasalMaximo){
+			respuesta = pregunta.toUpperCase();
+		  }
+        System.out.println(respuesta);
+        return respuesta;
     }
 }
