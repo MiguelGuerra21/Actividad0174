@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=nombre\ genero\ peso\ altura\ edad
+comment0.target=Persona(java.lang.String,\ boolean,\ int,\ int,\ int)
+comment0.text=\r\n\ El\ constructor\ de\ la\ clase\ Persona\ deber\u00E1\ tener\ (en\ el\ mismo\ orden)\:\r\n\r\n\ \ \ \ Un\ par\u00E1metro\ que\ permita\ indicar\ el\ nombre\ de\ la\ persona.\r\n\ \ \ \ Un\ par\u00E1metro\ booleano\ que\ permita\ indicar\ si\ la\ persona\ es\ un\ hombre.True\ si\ lo\ es\ False\ si\ no\r\n\ \ \ \ Un\ par\u00E1metro\ entero\ que\ permita\ indicar\ el\ peso\ en\ kilogramos\ de\ la\ persona.\r\n\ \ \ \ Un\ par\u00E1metro\ entero\ que\ permita\ indicar\ la\ altura\ en\ cent\u00EDmetros\ de\ la\ persona.\r\n\ \ \ \ Un\ par\u00E1metro\ entero\ que\ permita\ indicar\ la\ edad\ en\ a\u00F1os\ de\ la\ persona.\r\n
+comment1.params=
+comment1.target=int\ getCaloriasIngeridas()
+comment2.params=nombre
+comment2.target=int\ comer(Comida)
+comment2.text=\r\n\ Hombres\ \=\ (10\ x\ peso\ en\ kg)\ +\ (6\ \u00D7\ altura\ en\ cm)\ -\ (5\ \u00D7\ edad\ en\ a\u00F1os)\ +\ 5\r\n\ Mujeres\ \=\ (10\ x\ peso\ en\ kg)\ +\ (6\ \u00D7\ altura\ en\ cm)\ -\ (5\ \u00D7\ edad\ en\ a\u00F1os)\ -\ 161\r\n
+numComments=3
