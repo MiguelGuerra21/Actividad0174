@@ -12,4 +12,6 @@ comment3.params=
 comment3.target=void\ TestCommit01()
 comment4.params=
 comment4.target=void\ TestCommit02()
-numComments=5
+comment5.params=
+comment5.target=void\ test3()
+numComments=6

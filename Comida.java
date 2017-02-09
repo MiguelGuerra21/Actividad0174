@@ -22,4 +22,7 @@ public class Comida
     public int getCalorias(){
         return calorias;
     }
+    public String getNombre(){
+        return nombreComida;
+    }
 }

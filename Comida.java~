@@ -16,10 +16,13 @@ public class Comida
      */
     public Comida(String nombre, int calorias)
     {
-        nombre = nombreComida;
+        nombreComida = nombre;
         this.calorias = calorias;
     }
     public int getCalorias(){
         return calorias;
+    }
+    public void getNombre(){
+        return nombreComida;
     }
 }

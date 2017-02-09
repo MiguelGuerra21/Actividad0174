@@ -146,4 +146,26 @@ public class PersonaTest
         assertEquals("¿TE LLAMAS LUIS?", persona2.contestar("¿Te llamas Luis?"));          
         
     }
+
+    @Test
+    public void test3()
+    {
+        Persona persona3 = new Persona("piki", true, 80, 180, 19);
+        assertEquals(null, persona1.getAlimentoMasCaloricoConsumido());
+        assertEquals(600, persona2.comer(comida3));
+        assertEquals(600, persona2.comer(comida3));
+        assertEquals("Lentejas", persona2.getAlimentoMasCaloricoConsumido());
+        assertEquals(1200, persona3.comer(comida2));
+        assertEquals(600, persona3.comer(comida3));
+        assertEquals("Pizza", persona3.getAlimentoMasCaloricoConsumido());
+        Persona persona4 = new Persona("manolo", true, 80, 180, 40);
+        assertEquals(600, persona4.comer(comida3));
+        assertEquals(1200, persona4.comer(comida2));
+        assertEquals("Pizza", persona4.getAlimentoMasCaloricoConsumido());
+        Persona persona5 = new Persona("pepin", true, 80, 180, 50);
+        assertEquals(600, persona5.comer(comida3));
+        assertEquals(1200, persona5.comer(comida2));
+        assertEquals(269, persona5.comer(comida5));
+        assertEquals("Pizza", persona5.getAlimentoMasCaloricoConsumido());
+    }
 }

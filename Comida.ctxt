@@ -4,4 +4,6 @@ comment0.target=Comida(java.lang.String,\ int)
 comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ Comida\r\n
 comment1.params=
 comment1.target=int\ getCalorias()
-numComments=2
+comment2.params=
+comment2.target=java.lang.String\ getNombre()
+numComments=3

@@ -9,4 +9,6 @@ comment2.target=int\ comer(Comida)
 comment2.text=\r\n\ Hombres\ \=\ (10\ x\ peso\ en\ kg)\ +\ (6\ \u00D7\ altura\ en\ cm)\ +\ (5\ \u00D7\ edad\ en\ a\u00F1os)\ +\ 5\r\n\ Mujeres\ \=\ (10\ x\ peso\ en\ kg)\ +\ (6\ \u00D7\ altura\ en\ cm)\ +\ (5\ \u00D7\ edad\ en\ a\u00F1os)\ -\ 161\r\n
 comment3.params=pregunta
 comment3.target=java.lang.String\ contestar(java.lang.String)
-numComments=4
+comment4.params=
+comment4.target=java.lang.String\ getAlimentoMasCaloricoConsumido()
+numComments=5
